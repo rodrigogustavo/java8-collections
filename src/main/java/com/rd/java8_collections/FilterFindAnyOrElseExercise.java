@@ -10,7 +10,6 @@ public class FilterFindAnyOrElseExercise {
 										new Game("Mario Bross", 6),
 										new Game("Need For Speed", 12));
 	
-		//Need to pay attention, the filter will return the first result
 		Game result = games.stream().filter(x -> 17 < x.getMinimalAge()).findAny().orElse(null);
 		
 		Game result2 = games.stream().filter(x -> 30 < x.getMinimalAge()).findAny().orElse(null);
